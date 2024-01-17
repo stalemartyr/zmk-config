@@ -44,10 +44,10 @@
 
         layer_2 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans    &trans   &trans      &trans      &kp PAGE_UP
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6   &kp F7    &kp F8   &kp F9      &kp F10     &kp PAGE_DOWN
-&trans      &none         &trans        &trans        &trans        &kp F11         &kp F12  &kp HOME  &kp END  &kp INSERT  &kp DELETE  &kp PRINTSCREEN
-                                        &trans        &trans        &trans          &trans   &trans    &trans
+&bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans  &trans  &trans  &trans   &kp PRINTSCREEN
+&kp PAGE_UP    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&kp PAGE_DOWN  &kp HOME      &kp END       &kp INSERT    &kp DELETE    &kp F11         &kp F12  &trans  &trans  &trans  &trans   &trans
+                                           &trans        &trans        &trans          &trans   &trans  &trans
             >;
         };
 
