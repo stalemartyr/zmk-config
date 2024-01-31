@@ -6,10 +6,18 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        test_macro: test_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp T &kp N4 &kp L &kp N3 &kp LS(M) &kp N4 &kp R &kp T &kp Y &kp R &kp N1 &kp N9 &kp N9 &kp N2>;
+            label = "TEST_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -45,18 +53,18 @@
 
         layer_2 {
             bindings = <
-&bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &ext_power EP_ON  &kp A   &trans  &trans  &trans   &kp PRINTSCREEN
-&kp PAGE_UP    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&kp PAGE_DOWN  &kp HOME      &kp END       &kp INSERT    &kp DELETE    &kp F11         &kp F12           &trans  &trans  &trans  &trans   &trans
-                                           &trans        &trans        &trans          &trans            &trans  &trans
+&bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans       &trans  &trans  &trans   &kp PRINTSCREEN
+&kp PAGE_UP    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6   &kp F7       &kp F8  &kp F9  &kp F10  &trans
+&kp PAGE_DOWN  &kp HOME      &kp END       &kp INSERT    &kp DELETE    &kp F11         &kp F12  &trans       &trans  &trans  &trans   &trans
+                                           &trans        &trans        &trans          &trans   &test_macro  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &kp Y   &trans  &trans  &kp P   &trans         &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp H   &kp J   &kp K   &kp L   &kp SEMICOLON  &kp DOUBLE_QUOTES
-&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &kp M   &trans  &trans  &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &kp Y   &trans  &trans  &kp P   &trans     &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp H   &kp J   &kp K   &kp L   &kp COLON  &kp DOUBLE_QUOTES
+&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &kp M   &trans  &trans  &trans     &trans
                                     &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
