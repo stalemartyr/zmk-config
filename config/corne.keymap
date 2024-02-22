@@ -24,6 +24,8 @@
             label = "LEFTLAYERBEHAVIOR";
             #binding-cells = <0>;
             bindings = <&mt LEFT_COMMAND SPACE>, <&lt 1 SPACE>;
+
+            tapping-term-ms = <100>;
         };
     };
 
