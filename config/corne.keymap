@@ -100,7 +100,7 @@
         layer_3 {
             bindings = <
 &kp LESS_THAN  &kp GREATER_THAN  &trans        &mkp LCLK     &mkp MCLK     &mkp RCLK       &kp Y   &trans  &trans  &kp P   &trans     &trans
-&kp PLUS       &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp H   &kp J   &kp K   &kp L   &kp COLON  &kp DOUBLE_QUOTES
+&kp PLUS       &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp NUMBER_5    &kp H   &kp J   &kp K   &kp L   &kp COLON  &kp DOUBLE_QUOTES
 &kp MINUS      &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &kp M   &trans  &trans  &trans     &trans
                                                &trans        &trans        &trans          &trans  &trans  &trans
             >;
