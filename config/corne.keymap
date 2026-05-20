@@ -42,7 +42,19 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        KritaON {
+            bindings = <&tog 4>;
+            key-positions = <38 0>;
+        };
+
+        DefaultOn {
+            bindings = <&tog 0>;
+            key-positions = <37 0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -92,6 +104,15 @@
 &kp PLUS       &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp H   &kp J   &kp K   &kp L   &kp COLON  &kp DOUBLE_QUOTES
 &kp MINUS      &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &kp M   &trans  &trans  &trans     &trans
                                                &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp K   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
