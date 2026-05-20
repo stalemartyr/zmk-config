@@ -44,14 +44,9 @@
         KritaON {
             bindings = <&tog 4>;
             key-positions = <38 0>;
-            timeout-ms = <50>;
+            timeout-ms = <200>;
         };
 
-        DefaultOn {
-            bindings = <&tog 0>;
-            key-positions = <37 0>;
-            timeout-ms = <50>;
-        };
     };
 
     keymap {
