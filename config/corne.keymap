@@ -42,19 +42,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        trigger-shortcuts {
-            bindings = <&tog 4>;
-            key-positions = <38 0>;
-        };
-
-        default {
-            bindings = <&tog 0>;
-            key-positions = <0 37>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
