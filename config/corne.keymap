@@ -16,6 +16,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(S) &kp T &kp N4 &kp L &kp N3 &kp LS(M) &kp N4 &kp R &kp T &kp Y &kp R &kp N1 &kp N9 &kp N9 &kp N2>;
         };
+
+        krita_save: krita_save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "KRITA_SAVE";
+        };
     };
 
     behaviors {
@@ -101,10 +108,10 @@
 
         krita {
             bindings = <
-&trans          &trans  &trans     &kp E            &trans          &kp T               &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp A   &kp LC(S)  &trans           &kp F           &kp M               &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC         &trans  &trans     &kp E            &trans          &kp T               &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp A   &kp LG(S)  &trans           &kp F           &kp M               &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans     &kp RIGHT_ARROW  &kp LEFT_ARROW  &kp B               &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp LC(LS(Z))    &kp LC(Z)       &kp LEFT_COMMAND    &trans  &trans  &trans
+                                   &kp LS(LG(Z))    &kp LG(Z)       &kp LEFT_COMMAND    &trans  &trans  &trans
             >;
         };
     };
