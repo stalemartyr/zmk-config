@@ -46,7 +46,6 @@
             key-positions = <38 0>;
             timeout-ms = <200>;
         };
-
     };
 
     keymap {
@@ -100,12 +99,12 @@
             >;
         };
 
-        layer_4 {
+        krita {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp K   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans          &trans  &trans     &kp E            &trans          &kp T               &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp A   &kp LC(S)  &trans           &kp F           &kp M               &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans     &kp RIGHT_ARROW  &kp LEFT_ARROW  &kp B               &trans  &trans  &trans  &trans  &trans  &trans
+                                   &kp LC(LS(Z))    &kp LC(Z)       &kp LEFT_COMMAND    &trans  &trans  &trans
             >;
         };
     };
