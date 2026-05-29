@@ -28,7 +28,7 @@
         option_layer: option_layer {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&mo 1>;
+            bindings = <&kp LEFT_ALT>, <&mo 2>;
 
             tapping-term-ms = <200>;
         };
@@ -48,7 +48,7 @@
         compatible = "zmk,combos";
 
         KritaON {
-            bindings = <&tog 0>;
+            bindings = <&tog 1>;
             key-positions = <38 0>;
             timeout-ms = <200>;
         };
@@ -63,6 +63,15 @@
 &kp TAB         &kp A   &kp LG(S)  &trans            &kp F           &kp M        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans     &kp RIGHT_ARROW   &kp LEFT_ARROW  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
                                    &kp LEFT_COMMAND  &kp LG(LS(Z))   &kp LG(Z)    &trans  &trans  &trans
+            >;
+        };
+
+        krita_android {
+            bindings = <
+&trans  &trans  &trans     &trans            &kp LS(T)      &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LC(S)  &trans            &trans         &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans            &trans         &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp LEFT_CONTROL  &kp LC(LS(Z))  &kp LC(Z)    &trans  &trans  &trans
             >;
         };
 
