@@ -59,7 +59,7 @@
 
         krita {
             bindings = <
-&kp ESC         &trans  &trans     &kp E             &kp LS(T)       &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC         &kp F5  &trans     &kp E             &kp LS(T)       &kp T        &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB         &kp A   &kp LG(S)  &trans            &kp F           &kp M        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans     &kp RIGHT_ARROW   &kp LEFT_ARROW  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
                                    &kp LEFT_COMMAND  &kp LG(LS(Z))   &kp LG(Z)    &trans  &trans  &trans
