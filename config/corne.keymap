@@ -71,7 +71,7 @@
         krita {
             bindings = <
 &kp ESC         &kp F5   &kp W         &kp E                              &layersearch_tool R LS(T)  &kp T          &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp A    &kp LG(S)     &trans                             &kp F                      &kp M          &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp A    &kp LG(S)     &kp V                              &kp F                      &kp M          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp DOT  &kp UP_ARROW  &kp RIGHT_ARROW                    &kp LEFT_ARROW             &kp B          &trans  &trans  &trans  &trans  &trans  &trans
                                        &space_command LEFT_COMMAND SPACE  &lt 3 LG(LS(Z))            &lt 2 LG(Z)    &trans  &trans  &trans
             >;
