@@ -42,6 +42,17 @@
             require-prior-idle-ms = <(-1)>;
             tapping-term-ms = <200>;
         };
+
+        layersearch_tool: layersearch_tool {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYERSEARCH_TOOL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <(-1)>;
+            require-prior-idle-ms = <(-1)>;
+        };
     };
 
     combos {
@@ -59,10 +70,10 @@
 
         krita {
             bindings = <
-&kp ESC         &kp F5  &kp W      &kp E                              &kp LS(T)        &kp T          &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp A   &kp LG(S)  &trans                             &kp F            &kp M          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans     &kp RIGHT_ARROW                    &kp LEFT_ARROW   &kp B          &trans  &trans  &trans  &trans  &trans  &trans
-                                   &space_command LEFT_COMMAND SPACE  &lt 3 LG(LS(Z))  &lt 2 LG(Z)    &trans  &trans  &trans
+&kp ESC         &kp F5   &kp W         &kp E                              &layersearch_tool R LS(T)  &kp T          &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp A    &kp LG(S)     &trans                             &kp F                      &kp M          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp DOT  &kp UP_ARROW  &kp RIGHT_ARROW                    &kp LEFT_ARROW             &kp B          &trans  &trans  &trans  &trans  &trans  &trans
+                                       &space_command LEFT_COMMAND SPACE  &lt 3 LG(LS(Z))            &lt 2 LG(Z)    &trans  &trans  &trans
             >;
         };
 
